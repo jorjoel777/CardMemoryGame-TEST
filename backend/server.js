@@ -21,8 +21,9 @@ const app = express();
 
 // Middleware
 app.use(cors()); // Allow cross-origin requests
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 
 // Routes
 app.use('/api/users', userRoutes); // Ensure this line exists

@@ -8,7 +8,7 @@ import buttonHoverSound from "../assets/audio/button-hover.mp3";
 import buttonClickSound from "../assets/audio/button-click.mp3";
 import { X } from "lucide-react";
 import "./Play.css";
-
+import GameHistory from "./GameHistory.jsx";
 const modalStyles = {
   overlay: {
     backgroundColor: "rgba(0, 0, 0, 0.7)",
@@ -242,6 +242,13 @@ const Play = () => {
         >
           Settings
         </button>
+        <button
+          className={`game-button ${isCalmMode ? "calm-button" : ""}`}
+          onClick={() => navigate("/history")}
+          onMouseEnter={playHoverSound}
+         >
+          Game History
+         </button>
       </div>
       <Modal
         isOpen={SettingsmodalIsOpen}

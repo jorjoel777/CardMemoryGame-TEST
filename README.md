@@ -1,73 +1,111 @@
+## WonderCards – Full Stack Memory Game 🎮🚀
 
-## Card Memory Game - Simplified Skill Test
+### Developed by: [jorjoel777](https://github.com/jorjoel777)
 
-### Welcome!
-Thank you for your interest in joining! This is a simplified skill test designed to understand your approach to problem-solving and development. The tasks are categorized based on your area of expertise.
+This project was developed individually as a full-stack technical test. It includes a working frontend and backend with MongoDB integration to store users and game results. A retro-styled UI and game logic complete the user experience.
 
 ---
 
-### 🎯 **Objective:**
-Build a small part of a card memory game based on your assigned role. This is meant to be completed within **2–3 hours** to showcase your skills.
+### 🧠 Objective
 
-### 🛠️ **Tech Stack:**
-- Frontend: React, Vite
-- Backend: Node.js, Express
-- Database: MongoDB (only if applicable)
-- Web3: MetaMask integration (only if applicable)
+Build a working memory card game featuring:
+- User registration and login
+- Difficulty level selection
+- Game logic with score saving
+- A game history screen
 
-### 🚀 **Setup Guide:**
+---
+
+### 🛠️ Tech Stack
+
+- **Frontend:** React + Vite
+- **Backend:** Node.js + Express
+- **Database:** MongoDB
+- **Styling:** Custom CSS with pixel-art retro theme
+- **Assets:** Audio (hover/click), animated background, custom fonts
+
+---
+
+### ⚙️ Project Setup
+
 1. Clone the repository:
    ```bash
-   git clone https://github.com/labsorg525/Test.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd labsorg525
-   ```
-3. Set up the backend:
-   ```bash
-   cd ./backend
-   npm install
-   npm start
-   ```
-4. Set up the frontend:
-   ```bash
-   cd ../frontend
-   npm install
-   npm start
-   ```
-5. Visit `http://localhost:5173` to see the project.
+   git clone https://github.com/jorjoel777/CardMemoryGame-TEST.git
 
----
+Navigate to the project root:
 
-### 🧩 **Task Breakdown by Role (Ordered by Importance):**
+cd CardMemoryGame-TEST
 
-#### **Frontend Developer:**
-- Style the login page to be visually appealing and responsive.
-- Create a modal dialog for level selection (Easy, Medium, Hard).
 
-#### **Backend Developer:**
-- Implement a simple API endpoint to save game results.
-- Create a route to fetch the game result history (no need for complex authentication).
+Set up and start the backend:
+cd backend
+npm install
+npm start
 
-#### **Full Stack Developer:**
-- Complete both the Frontend and Backend tasks.
-- Integrate the API to display the game result history on a new page.
 
-#### **Web3 Developer:**
-- Implement MetaMask wallet connection.
-- Show a message displaying the connected wallet address.
+Set up and start the frontend:
+cd ../frontend
+npm install
+npm run dev
 
-#### **Designer:**
-- Create assets like a styled Play button and card designs.
-- Suggest UI/UX improvements for the main screen.
+Open your browser at:
+http://localhost:5173
 
-#### **QA Tester:**
-- Create a comprehensive testing plan that outlines your testing strategy for the card memory game, including at least 8 test cases with detailed steps and expected outcomes.  
-- Additionally, suggest best practices for maintaining quality throughout the development lifecycle.
+✅ Features Implemented
 
----
+Frontend:
 
----
+ Styled login and register pages (centered, responsive)
 
-### ⚡ **Good Luck and Have Fun!**
+ Difficulty selection modal (Easy, Medium, Hard)
+
+ Animated game screen with audio effects
+
+ Game history screen with scroll and formatted results
+
+ Token and userID stored via localStorage
+
+ Game time and date (with hour) shown per match
+
+Backend:
+ User registration endpoint (POST /api/users/register)
+
+ User login endpoint (POST /api/users/login)
+
+ Game result saving (POST /api/memory/save)
+
+ History retrieval (GET /api/memory/history/:userID)
+
+📁 Project Structure
+
+CardMemoryGame-TEST/
+├── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── Login/
+│   │   ├── MemoryCardGame/
+│   │   ├── assets/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+
+Notes
+Backend runs on port 5000, frontend on 5173
+
+MongoDB connection is configured for local use
+
+No Web3 or MetaMask functionality was required or included
+
+Focused on clean UX, logic separation, and practical functionality
+
+🙌 Thank You
+This test was developed with care and intention to demonstrate practical full-stack skills, UI styling, and component-based logic in React.
+
+Ready to deploy.
+
