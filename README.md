@@ -117,6 +117,7 @@ CardMemoryGame-TEST/
 - Focused on clean UX, logic separation, and reusable components.
 
 🙌 Thank You
+
 This test was developed with care and intention to demonstrate practical full-stack skills, UI styling, and component-based logic in React.
 Ready to deploy.
 
