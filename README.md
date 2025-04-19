@@ -62,18 +62,13 @@ Build a working memory card game featuring:
 
 3. Set up and start the backend:
    ```bash
-cd backend
-npm install
-npm start
-
-4.Set up and start the frontend:
-   ```bash
-cd ../frontend
-npm install
-npm run dev
+   cd backend
+   npm install
+   npm start
 
 5. Visit the frontend at:
-http://localhost:5173
+   ```bash
+   http://localhost:5173
 
 ✅ Features Implemented
 
