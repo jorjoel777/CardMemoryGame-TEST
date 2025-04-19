@@ -56,23 +56,23 @@ Build a working memory card game featuring:
    git clone https://github.com/jorjoel777/CardMemoryGame-TEST.git
 
 
-Navigate to the project root:
+2. Navigate to the project root:
+   ```bash
+   cd CardMemoryGame-TEST
 
-cd CardMemoryGame-TEST
-
-
-Set up and start the backend:
+3. Set up and start the backend:
+   ```bash
 cd backend
 npm install
 npm start
 
-
-Set up and start the frontend:
+4.Set up and start the frontend:
+   ```bash
 cd ../frontend
 npm install
 npm run dev
 
-Open your browser at:
+5. Visit the frontend at:
 http://localhost:5173
 
 ✅ Features Implemented
@@ -100,7 +100,7 @@ Backend:
 
  History retrieval (GET /api/memory/history/:userID)
 
-📁 Project Structure
+📁 Folder Structure
 
 CardMemoryGame-TEST/
 ├── backend/
@@ -121,7 +121,7 @@ CardMemoryGame-TEST/
 
 📌 Notes
 
-- While the original challenge was estimated at 2–3 hours, I dedicated additional time to deliver features that enhance user value and demonstrate a comprehensive full-stack workflow.
+- The original challenge suggested 2–3 hours. I invested additional time to implement meaningful upgrades and polish.
 - Backend runs on port `5000`, frontend on `5173`.
 - MongoDB connection is pre-configured (tested with MongoDB Atlas).
 - No Web3 or MetaMask functionality was required or implemented.
