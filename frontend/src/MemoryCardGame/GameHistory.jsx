@@ -3,12 +3,15 @@ import axios from 'axios';
 import "./GameHistory.css";
 import backgroundGif from "../assets/images/play.gif";
 import calmBackground from "../assets/images/calm-wallpaper.jpg";
+import { useNavigate } from 'react-router-dom'; // Asegurate de tener esto arriba
 
 const isCalmMode = false; // Static BG
+
 
 const GameHistory = () => {
   const [history, setHistory] = useState([]);
   const userID = localStorage.getItem('userID');
+  const navigate = useNavigate(); // in order to go back to index
 
   useEffect(() => {
     const fetchHistory = async () => {
@@ -57,8 +60,17 @@ const GameHistory = () => {
               );
             })}
           </ul>
-        )}
+          
+
+           )}
       </div>
+      <button
+        className={`game-button ${isCalmMode ? "calm-button" : ""}`}
+        style={{ marginTop: '20px', maxWidth: '280px' }}
+        onClick={() => navigate('/play')}
+      >
+      Go Back
+      </button>
     </div>
   );
 };
