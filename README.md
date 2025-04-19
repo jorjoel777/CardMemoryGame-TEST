@@ -96,7 +96,7 @@ Backend:
  History retrieval (GET /api/memory/history/:userID)
 
 📁 Folder Structure
-
+   ```bash
 CardMemoryGame-TEST/
 ├── backend/
 │   ├── config/
@@ -114,7 +114,9 @@ CardMemoryGame-TEST/
 │   │   ├── main.jsx
 │   │   └── index.css
 
-📌 Notes
+
+ ```
+### 📌 Notes
 
 - The original challenge suggested 2–3 hours. I invested additional time to implement meaningful upgrades and polish.
 - Backend runs on port `5000`, frontend on `5173`.
