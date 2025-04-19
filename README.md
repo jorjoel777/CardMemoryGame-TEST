@@ -25,6 +25,23 @@ Build a working memory card game featuring:
 - **Assets:** Audio (hover/click), animated background, custom fonts
 
 ---
+### ✅ Features Implemented
+
+**Frontend:**
+- Styled login and register pages (centered, responsive)
+- Difficulty selection modal (Easy, Medium, Hard)
+- Animated game screen with audio effects
+- Game history screen with scroll and formatted results
+- Token and userID stored via localStorage
+- Game time and date (with hour) shown per match
+
+**Backend:**
+- User registration endpoint (`POST /api/users/register`)
+- User login endpoint (`POST /api/users/login`)
+- Game result saving (`POST /api/memory/save`)
+- History retrieval (`GET /api/memory/history/:userID`)
+
+---
 ### Additional Features Implemented
 
 - Email-based login functionality.
@@ -37,6 +54,7 @@ Build a working memory card game featuring:
 1. Clone the repository:
    ```bash
    git clone https://github.com/jorjoel777/CardMemoryGame-TEST.git
+
 
 Navigate to the project root:
 
@@ -101,21 +119,16 @@ CardMemoryGame-TEST/
 │   │   ├── main.jsx
 │   │   └── index.css
 
-Notes
+📌 Notes
 
-While the original challenge was estimated to take 2–3 hours, I dedicated additional time to implement features that enhance user value and demonstrate a comprehensive approach to full-stack development.
-
-Backend runs on port 5000, frontend on 5173
-
-MongoDB connection is configured for local use
-
-No Web3 or MetaMask functionality was required or included
-
-Focused on clean UX, logic separation, and practical functionality
+- While the original challenge was estimated at 2–3 hours, I dedicated additional time to deliver features that enhance user value and demonstrate a comprehensive full-stack workflow.
+- Backend runs on port `5000`, frontend on `5173`.
+- MongoDB connection is pre-configured (tested with MongoDB Atlas).
+- No Web3 or MetaMask functionality was required or implemented.
+- Focused on clean UX, logic separation, and reusable components.
 
 🙌 Thank You
 This test was developed with care and intention to demonstrate practical full-stack skills, UI styling, and component-based logic in React.
-
 Ready to deploy.
 
 
