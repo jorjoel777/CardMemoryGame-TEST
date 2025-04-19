@@ -25,7 +25,13 @@ Build a working memory card game featuring:
 - **Assets:** Audio (hover/click), animated background, custom fonts
 
 ---
+### Additional Features Implemented
 
+- Email-based login functionality.
+- Game history tracking with time calculations.
+- User interface improvements for better user experience.​
+
+ 
 ### ⚙️ Project Setup
 
 1. Clone the repository:
@@ -96,6 +102,9 @@ CardMemoryGame-TEST/
 │   │   └── index.css
 
 Notes
+
+While the original challenge was estimated to take 2–3 hours, I dedicated additional time to implement features that enhance user value and demonstrate a comprehensive approach to full-stack development.
+
 Backend runs on port 5000, frontend on 5173
 
 MongoDB connection is configured for local use
@@ -108,4 +117,6 @@ Focused on clean UX, logic separation, and practical functionality
 This test was developed with care and intention to demonstrate practical full-stack skills, UI styling, and component-based logic in React.
 
 Ready to deploy.
+
+
 
