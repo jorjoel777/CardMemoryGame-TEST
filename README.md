@@ -73,27 +73,19 @@ Build a working memory card game featuring:
 ✅ Features Implemented
 
 Frontend:
-
- Styled login and register pages (centered, responsive)
-
- Difficulty selection modal (Easy, Medium, Hard)
-
- Animated game screen with audio effects
-
- Game history screen with scroll and formatted results
-
- Token and userID stored via localStorage
-
- Game time and date (with hour) shown per match
+-  Styled login and register pages (centered, responsive)
+-  Difficulty selection modal (Easy, Medium, Hard)
+-  Animated game screen with audio effects
+-  Game history screen with scroll and formatted results
+-  Token and userID stored via localStorage
+-  Game time and date (with hour) shown per match
 
 Backend:
- User registration endpoint (POST /api/users/register)
+-  User registration endpoint (POST /api/users/register)
+-  User login endpoint (POST /api/users/login)
+-  Game result saving (POST /api/memory/save)
+-  History retrieval (GET /api/memory/history/:userID)
 
- User login endpoint (POST /api/users/login)
-
- Game result saving (POST /api/memory/save)
-
- History retrieval (GET /api/memory/history/:userID)
 
 📁 Folder Structure
    ```bash
